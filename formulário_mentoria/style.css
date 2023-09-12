@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 436px;
+    background: #565971;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+header {
+    width: 750px;
+    margin: auto;
+
+}
+
+.header-wrapper {
+    width: 417px;
+    margin-top: 140px;
+}
+
+header h1 {
+    font-family: 'Staatliches', cursive;
+    color: white;
+    margin-bottom: 18px;
+    font-size: 48px;
+}
+
+header p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+body {
+    background-color: #EFEFEF;
+}
+
+body p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+
+}
+
+body legend {
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+    color: #565971;
+
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E6E6F0;
+    margin-bottom: 36px;
+}
+
+.col-3 {
+    display: flex;
+}
+
+.title-2nd legend {
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    color: #565971;
+    border: none;
+    margin-top: 32px;
+    margin-bottom: 11px;
+    padding: 0;
+}
+
+body fieldset {
+    border: none;
+    padding: 64px 64px 0 64px;
+}
+
+.form {
+    width: 750px;
+    margin: 58px auto;
+    background: #fff;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.col-2 {
+    display: flex;
+    gap: 22px;
+}
+
+label {
+    display: block;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+span {
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+
+}
+
+.specific-info input,
+.personal-info input,
+.first-mentorship input {
+    width: 300px;
+    height: 56px;
+    background-color: #fafafc;
+    border: 1px solid #e6e6f0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+
+}
+
+.personal-info input {
+    width: 100%;
+}
+
+.specific-time {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 32px;
+
+}
+
+.specific-time input {
+    width: 140px;
+}
+
+footer {
+    font-family: 'Staatliches', cursive;
+
+    height: 160px;
+    width: 750px;
+    margin-top: 64px;
+    background: #535971;
+    border-radius: 0 0 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#button {
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    line-height: 26px;
+
+    width: 608px;
+    height: 56px;
+    border: none;
+    border-radius: 20px;
+
+    background: #FF5374;
+    color: #fff;
+
+}
+
+#button:hover {
+    background: #c43d58;
+    cursor: pointer;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
