@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    background: linear-gradient(200deg, #BB00FF 0%, #190361 100%);
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+}
+
+.firstWrapper, .secondWrapper {
+    background-color: white;
+    width: 42.8rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    border-radius: .5rem;
+    box-shadow: 0 2rem 4rem black;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tittle {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #34355B;
+}
+
+.text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    margin: 1.4rem 3.3rem 1.6rem;
+}
+
+.luckyText {
+    margin: 1.4rem 3.3rem 1.6rem;
+    background: #E4EDF1;
+    font-family: 'Dancing Script', cursive;
+    padding: 1rem;
+    font-size: 2.4rem;
+    box-shadow: 2px 2px 2px 0px rgb(180, 180, 180);
+}
+
+img {
+    margin: 5rem;
+}
+
+.buttonReset {
+    font-family: 'DM Sans', sans-serif;
+    width: 18rem;
+    height: 5.2rem;
+    border: none;
+    background: #FF9500;
+    color: #fff;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(-5deg); }
+    50% { transform: translateX(5px) rotate(5deg); }
+    75% { transform: translateX(-5px) rotate(-5deg); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Aplica a animação à imagem quando o mouse passa sobre ela */
+  .biscoitoFechado:hover {
+    animation: shake 0.5s ease-in-out infinite;
+  }
+
+  @keyframes creditsAnimation {
+    0% {
+      transform: translateY(100%) scale(0.2);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  /* Estilo do contêiner dos créditos */
+  .luckyText {
+    overflow: hidden; /* Esconde o texto que sai da área do contêiner */
+  }
+  
+  /* Estilo dos créditos */
+  .luckyText {
+    animation: creditsAnimation 1s linear; 
+  }
+  
+  /* Estilo do texto dos créditos */
+  .luckyText p {
+    margin: 10px 0;
+  }
